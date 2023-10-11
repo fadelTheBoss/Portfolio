@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.skillcard:nth-child(1){
+    border-bottom: 4px solid #5E3BEE;
+}
