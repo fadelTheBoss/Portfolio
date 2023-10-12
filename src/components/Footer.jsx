@@ -76,7 +76,7 @@ const Footer = () => {
             Term of services
           </a>
           <a href="/" className="hover:text-gray-400">
-            Coockie Settings
+            Coockie 
           </a>
         </div>
       </div>
