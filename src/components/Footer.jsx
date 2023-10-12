@@ -52,7 +52,9 @@ const Footer = () => {
             <FaTwitter className={`${styles.socialMedia}`} />
           </a>
 
-          <FaLinkedin className={`${styles.socialMedia}`} />
+
+          <FaLinkedin title="pas de lien pour l'instant!" className={`${styles.socialMedia}`} />
+          
         </div>
       </div>
       <hr />
