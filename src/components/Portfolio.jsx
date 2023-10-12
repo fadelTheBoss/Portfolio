@@ -7,7 +7,7 @@ const Portfolio = () => {
     fetch("project.json")
       .then((res) => res.json())
       .then((data) => setProjects(data));
-    console.log(projects);
+
   }, []);
   return (
     <div className="mx-4 lg:mx-12 my-32" id="portfolio">
@@ -21,7 +21,7 @@ const Portfolio = () => {
             <button className="btn-primary bg-dribble py-5"> <FaDribbble className="w-6 h-6 inline-block mr-2" />visit  My Dribble</button>
         </div>
       </div>
-
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 ">
         {projects.map((project) => {
           return (
