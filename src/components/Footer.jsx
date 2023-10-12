@@ -51,7 +51,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className={`${styles.socialMedia}`}
           >
-            <FaTwitter className={`${styles.socialMedia}`} />
+            <FaTwitter />
           </a>
 
 
