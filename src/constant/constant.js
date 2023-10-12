@@ -1,4 +1,5 @@
-import { skill1, skill2, skill3, skill4, Avatar1, Avatar2, Avatar3 } from "../assets";
+import { skill1, skill2, skill3, skill4, Avatar1, Avatar2, Avatar3, project1, project2, project3 } from "../assets";
+
 export const skills = [
   {
     id: 1,
@@ -58,3 +59,27 @@ export const reviews = [
   },
 
 ];
+
+
+
+export const projects = [
+  {
+    id: 1,
+    name: "bank project",
+    description: "J'ai eu le privilège de concevoir une application bancaire moderne et conviviale en utilisant une combinaison de technologies de pointe, notamment React, Tailwind CSS, et bien d'autres.",
+    image: project1,
+  },
+  {
+    id: 2,
+    name: "App Dashboard",
+    description: "J'ai eu l'opportunité de créer un tableau de bord moderne et dynamique en utilisant une technologie de pointe, dont React et Tailwind CSS, pour fournir une interface de gestion de données visuellement attrayante et hautement fonctionnelle.",
+    image: project2,
+  },
+  {
+    id: 3,
+    name: "Agence study",
+    description: "J'ai eu le plaisir de concevoir un site web exceptionnel pour une agence de voyage, créant une passerelle virtuelle vers l'aventure et l'évasion. Ce projet allie la magie du voyage à une expérience utilisateur immersive, le tout grâce à des technologies innovantes.",
+    image: project3,
+  }
+]
+

@@ -1,5 +1,4 @@
-import { reviews } from "./constant";
-
+import { reviews } from "../constant/constant";
 const ReviewCard = () => {
   return (
     <>

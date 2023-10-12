@@ -1,4 +1,4 @@
-import { skills } from "./constant";
+import { skills } from "../constant/constant";
 import { styles } from "./styles";
 const Skills = () => {
   return (

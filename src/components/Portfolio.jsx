@@ -1,14 +1,8 @@
 import { useEffect, useState } from "react";
 import {FaDribbble} from "react-icons/fa"
 import arrowImage from "../assets/arrow.png";
+import { projects } from "../constant/constant";
 const Portfolio = () => {
-  const [projects, setProjects] = useState([]);
-  useEffect(() => {
-    fetch("project.json")
-      .then((res) => res.json())
-      .then((data) => setProjects(data));
-
-  }, []);
   return (
     <div className="mx-4 lg:mx-12 my-32" id="portfolio">
       <div className="flex flex-col md:flex-row justify-between mb-20 gap-8 md:items-center">
