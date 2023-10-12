@@ -62,7 +62,7 @@ const Footer = () => {
       <hr />
 
       <div className="mt-2 flex flex-col md:flex-row justify-between gap-8 ">
-        <p className="">Make with Fallou</p>
+        <p className="">Make by Fallou</p>
         <div className="space-x-6">
           <a href="/" className="hover:text-gray-400">
             Privacy Police
