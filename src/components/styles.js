@@ -1,8 +1,8 @@
 export const styles={
     nav: "block py-2 px-4 cursor-pointer hover:scale-90 ",
 
-    inputForm: "block border border-primary rounded-lg py-2 mt-2 w-full",
-    labelForm: "text-base text-headingcolor w-full",
+    inputForm: "block border border-primary rounded-lg py-2 mt-2 w-full text-center",
+    labelForm: "text-base text-headingcolor w-full ",
     inputContainer: "flex flex-col sm:flex-row gap-8 items-center mb-8",
     labelItems: "w-full sm:w-1/2 ",
 

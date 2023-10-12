@@ -31,9 +31,13 @@ const Footer = () => {
         </div>
 
         <div className="flex item-center gap-4 ml-4 ">
-          <a href="https://www.facebook.com/people/Benfadel-Seye/pfbid02kvtUu2k5b6oMbreMVqy1VGFvHBAeoXbewcWhLVDsCKMdnVUFg7V1EckUbfnNUrJHl/" target="_blank" rel="noopener noreferrer" className={`${styles.socialMedia}`}>
-
-          <FaFacebook  />
+          <a
+            href="https://www.facebook.com/people/Benfadel-Seye/pfbid02kvtUu2k5b6oMbreMVqy1VGFvHBAeoXbewcWhLVDsCKMdnVUFg7V1EckUbfnNUrJHl/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.socialMedia}`}
+          >
+            <FaFacebook />
           </a>
 
           <a
@@ -42,7 +46,7 @@ const Footer = () => {
             rel="noopener noreferrer"
             className={`${styles.socialMedia}`}
           >
-            <FaInstagram  />
+            <FaInstagram />
           </a>
 
           <a
@@ -54,9 +58,10 @@ const Footer = () => {
             <FaTwitter />
           </a>
 
-
-          <FaLinkedin title="pas de lien pour l'instant!" className={`${styles.socialMedia}`} />
-          
+          <FaLinkedin
+            title="pas de lien pour l'instant!"
+            className={`${styles.socialMedia}`}
+          />
         </div>
       </div>
       <hr />

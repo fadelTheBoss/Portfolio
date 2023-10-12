@@ -1,4 +1,5 @@
 import { reviews } from "../constant/constant";
+import stars from "/src/assets/starts.png"
 const ReviewCard = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const ReviewCard = () => {
             className="border-2 border-b-[#006B6A] p-8 rounded-md "
           >
             <div>
-              <img src="/src/assets/starts.png" alt="" className="h-4" />
+              <img src={stars} alt="" className="h-4" />
               <p className="my-5">{review.comment}</p>
               <div className="flex gap-4 items-center">
                 <img
