@@ -1,14 +1,18 @@
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo-og.svg";
 import { styles } from "./styles";
 const Footer = () => {
   return (
     <div className="bg-bgShade py-24 px-4 md:px-12" id="footer">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-8 mb-20">
-        <a href="" className="flex-shrink-0">
+        <a href="" className="flex-shrink-0 flex items-center gap-2 p-2 ">
           {" "}
-          <img src={logo} />
+          <img src={logo} className="h-16 w-16 cursor-pointer hover:scale-90 border-4 border-l-primary border-b-primary border-t-primary p-2 rounded-full" />
+          <h1 className="text-xl text-primary font-bold cursor-pointer  hover:text-gray-400 hover:scale-90 ">
+              SénéGeek
+            </h1>
         </a>
+
         <div className="flex flex-col sm:flex-row md:items-center  gap-4 flex-wrap  ">
           <a href="#home" className="block hover:text-gray-400 py-2 px-4">
             Home

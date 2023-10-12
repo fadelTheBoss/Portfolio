@@ -34,8 +34,13 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between">
           <div className=" flex items-center gap-2 p-2">
-            <img src={logo} alt="logo" className="h-16 w-16 border-2 border-l-primary border-b-primary border-t-primary p-1 rounded-full " />
-            <h1 className="text-xl text-primary font-bold cursor-pointer  hover:text-gray-400 hover:scale-90 ">SénéGeek</h1>
+            <img
+              src={logo}
+              className="h-16 w-16 border-2 cursor-pointer hover:scale-90 border-l-primary border-b-primary border-t-primary p-1 rounded-full "
+            />
+            <h1 className="text-xl text-primary font-bold cursor-pointer  hover:text-gray-400 hover:scale-90 ">
+              SénéGeek
+            </h1>
           </div>
 
           <div className={`lg:flex items-center gap-3 hidden text-body`}>
@@ -113,9 +118,7 @@ const Navbar = () => {
             onClick={togggleMenu}
             className="lg:hidden text-body text-3xl"
           >
-            {
-              isMenuOppen? <AiOutlineClose /> :<HiMenu /> 
-            }
+            {isMenuOppen ? <AiOutlineClose /> : <HiMenu />}
           </button>
         </div>
 

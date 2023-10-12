@@ -1,27 +1,36 @@
-import React, { useEffect, useRef } from 'react';
-import emailjs, { sendForm } from '@emailjs/browser';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import React, { useEffect, useRef } from "react";
+import emailjs, { sendForm } from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { styles } from "./styles";
 const Contact = () => {
-  const form = useRef()
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_4waqfu8', 'template_e5rcll5', form.current, '_vn3UnNYg0ETA3iIg')
-      .then((result) => {
+    emailjs
+      .sendForm(
+        "service_4waqfu8",
+        "template_e5rcll5",
+        form.current,
+        "_vn3UnNYg0ETA3iIg"
+      )
+      .then(
+        (result) => {
           console.log(result);
-          alert("message envoyé avec succé")
+          alert("message envoyé avec succé");
           //SucessNotification()
-      }, (error) => {
+        },
+        (error) => {
           console.log(error.text);
-      });
-     e.target.reset()
+        }
+      );
+    e.target.reset();
   };
 
-  const SucessNotification=()=>{
-    toast.success('message envoyé avec succès!', {
+  const SucessNotification = () => {
+    toast.success("message envoyé avec succès!", {
       position: "top-right",
       autoClose: 6000,
       hideProgressBar: false,
@@ -29,13 +38,12 @@ const Contact = () => {
       draggable: true,
       progress: undefined,
       theme: "light",
-      });
-  }
+    });
+  };
 
-  
   return (
     <div className="px-4 lg:px-12" id="contact">
-        <ToastContainer
+      <ToastContainer
         position="top-right"
         autoClose={5000}
         hideProgressBar={false}
@@ -154,7 +162,6 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    
     </div>
   );
 };
