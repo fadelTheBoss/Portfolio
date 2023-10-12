@@ -31,23 +31,25 @@ const Footer = () => {
         </div>
 
         <div className="flex item-center gap-4 ml-4 ">
-          <a href="https://www.facebook.com/people/Benfadel-Seye/pfbid02kvtUu2k5b6oMbreMVqy1VGFvHBAeoXbewcWhLVDsCKMdnVUFg7V1EckUbfnNUrJHl/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/people/Benfadel-Seye/pfbid02kvtUu2k5b6oMbreMVqy1VGFvHBAeoXbewcWhLVDsCKMdnVUFg7V1EckUbfnNUrJHl/" target="_blank" rel="noopener noreferrer" className={`${styles.socialMedia}`}>
 
-          <FaFacebook className={`${styles.socialMedia}`} />
+          <FaFacebook  />
           </a>
 
           <a
             href="https://www.instagram.com/fallou_099/?igshid=MzMyNGUyNmU2YQ%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
+            className={`${styles.socialMedia}`}
           >
-            <FaInstagram className={`${styles.socialMedia}`} />
+            <FaInstagram  />
           </a>
 
           <a
             href="https://twitter.com/F4llou_?t=GwKCNeYfMswGgXn63J16fQ&s=09"
             target=" _blank"
             rel="noopener noreferrer"
+            className={`${styles.socialMedia}`}
           >
             <FaTwitter className={`${styles.socialMedia}`} />
           </a>
