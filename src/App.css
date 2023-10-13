@@ -10,7 +10,8 @@ header{
 }
 
 .btn-primary{
-    @apply px-8 py-4 bg-primary text-xl text-white rounded hover:bg-body hover:text-white hover:-translate-y-4 transition-all duration-300;
+    @apply px-8 py-4 bg-primary text-xl text-white rounded hover:bg-body
+  hover:text-white  hover:scale-90 md:hover:-translate-y-4 transition-all duration-300;
 }
 
 /* Firefox */

@@ -1,6 +1,7 @@
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
 import logo from "../assets/logo-og.svg";
 import { styles } from "./styles";
+import { socialMedias } from "../constant/constant";
 const Footer = () => {
   return (
     <div className="bg-bgShade py-24 px-4 md:px-12" id="footer">
@@ -31,37 +32,20 @@ const Footer = () => {
         </div>
 
         <div className="flex item-center gap-4 ml-4 ">
-          <a
-            href="https://www.facebook.com/people/Benfadel-Seye/pfbid02kvtUu2k5b6oMbreMVqy1VGFvHBAeoXbewcWhLVDsCKMdnVUFg7V1EckUbfnNUrJHl/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${styles.socialMedia}`}
-          >
-            <FaFacebook />
-          </a>
-
-          <a
-            href="https://www.instagram.com/fallou_099/?igshid=MzMyNGUyNmU2YQ%3D%3D"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`${styles.socialMedia}`}
-          >
-            <FaInstagram />
-          </a>
-
-          <a
-            href="https://twitter.com/F4llou_?t=GwKCNeYfMswGgXn63J16fQ&s=09"
-            target=" _blank"
-            rel="noopener noreferrer"
-            className={`${styles.socialMedia}`}
-          >
-            <FaTwitter />
-          </a>
-
-          <FaLinkedin
-            title="pas de lien pour l'instant!"
-            className={`${styles.socialMedia}`}
-          />
+          {socialMedias.map((socialMedia) => {
+            return (
+              <div key={socialMedia.id}>
+                <a
+                  href={socialMedia.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  
+                >
+                  <Icon iconName={socialMedia.iconName}  />
+                </a>
+              </div>
+            );
+          })}
         </div>
       </div>
       <hr />
@@ -76,7 +60,7 @@ const Footer = () => {
             Term of services
           </a>
           <a href="/" className="hover:text-gray-400">
-            Coockie 
+            Coockie
           </a>
         </div>
       </div>
@@ -84,4 +68,18 @@ const Footer = () => {
   );
 };
 
+const Icon = ({ iconName }) => {
+  switch (iconName) {
+    case 'github':
+      return <FaGithub className={`${styles.socialMedia} `} />;
+    case 'instagram':
+      return <FaInstagram className={`${styles.socialMedia} `}   />;
+    case 'twitter':
+      return <FaTwitter className={`${styles.socialMedia} `}  />;
+    case 'linkedin':
+      return <FaLinkedin className={`${styles.socialMedia} `}  />;
+    default:
+      return null; // Ou renvoyez une icône par défaut
+  }
+}
 export default Footer;

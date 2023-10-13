@@ -25,7 +25,6 @@ const Portfolio = () => {
             >
               <img
                 src={project.image}
-                alt=""
                 className="hover:scale-90 transition-all duration-300"
               />
               <div className="py-8">
@@ -34,8 +33,9 @@ const Portfolio = () => {
                 </h3>
                 <p className="text-body mb-4">{project.description}</p>
                 <a
-                  href="/"
-                  className="underline underline-offset-8 hover:text-primary "
+                  href={project.url}
+                  target=" _blank"
+                  className="underline underline-offset-8 hover:text-primary hover:scale-90 "
                 >
                   View In Dribble{" "}
                   <img src={arrowImage} className="w-3 inline-block ml-3" />

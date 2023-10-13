@@ -1,4 +1,5 @@
-import { skill1, skill2, skill3, skill4, Avatar1, Avatar2, Avatar3, project1, project2, project3 } from "../assets";
+import { skill1, skill2, skill3, skill4, Avatar1, Avatar2, Avatar3, project1, project2, project3 } from "../assets"
+
 
 export const skills = [
   {
@@ -68,18 +69,44 @@ export const projects = [
     name: "bank project",
     description: "J'ai eu le privilège de concevoir une application bancaire moderne et conviviale en utilisant une combinaison de technologies de pointe, notamment React, Tailwind CSS, et bien d'autres.",
     image: project1,
+    url: "https://web-bank-project.netlify.app/"
   },
   {
     id: 2,
     name: "App Dashboard",
-    description: "J'ai eu l'opportunité de créer un tableau de bord moderne et dynamique en utilisant une technologie de pointe, dont React et Tailwind CSS, pour fournir une interface de gestion de données visuellement attrayante et hautement fonctionnelle.",
+    description: "Un tableau de bord moderne et dynamique en utilisant une technologie de pointe, dont React et Tailwind CSS, pour fournir une interface de gestion de données fonctionnelle.",
     image: project2,
+    url: "/"
   },
   {
     id: 3,
     name: "Agence study",
-    description: "J'ai eu le plaisir de concevoir un site web exceptionnel pour une agence de voyage, créant une passerelle virtuelle vers l'aventure et l'évasion. Ce projet allie la magie du voyage à une expérience utilisateur immersive, le tout grâce à des technologies innovantes.",
+    description: "J'ai eu le plaisir de concevoir un site web exceptionnel pour une agence de voyage, créant une passerelle virtuelle vers l'aventure et l'évasion.",
     image: project3,
+    url: "/"
   }
 ]
 
+
+export const socialMedias = [
+  {
+    id: 1,
+    url: "https://github.com/fadelTheBoss",
+    iconName: 'github',
+  },
+  {
+    id: 2,
+    url: "https://www.instagram.com/fallou_099/?igshid=MzMyNGUyNmU2YQ%3D%3D",
+    iconName: 'instagram',
+  },
+  {
+    id: 3,
+    url: "https://twitter.com/F4llou_?t=GwKCNeYfMswGgXn63J16fQ&s=09",
+    iconName: 'twitter',
+  },
+  {
+    id: 4,
+    url: "",
+    iconName: 'linkedin',
+  },
+]
