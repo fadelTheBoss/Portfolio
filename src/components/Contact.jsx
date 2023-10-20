@@ -59,7 +59,7 @@ const Contact = () => {
         <p className="text-xl font-semibold mb-5">Get in touch </p>
         <h2 className="text-4xl md:text-5xl font-bold">Contact me</h2>
         <p className="mt-5">
-          N'hésitez pas à me contacter pour toute question, proposition de
+          N &apos; hésitez pas à me contacter pour toute question, proposition de
           projet ou simple discussion.
         </p>
       </div>

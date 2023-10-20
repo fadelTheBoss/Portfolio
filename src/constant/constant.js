@@ -96,8 +96,8 @@ export const socialMedias = [
   },
   {
     id: 2,
-    url: "https://www.instagram.com/fallou_099/?igshid=MzMyNGUyNmU2YQ%3D%3D",
-    iconName: 'instagram',
+    url: "mailto:seyepro40@gmail.com",
+    iconName: 'e-mail',
   },
   {
     id: 3,

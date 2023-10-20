@@ -1,4 +1,5 @@
 import { FaGithub, FaInstagram, FaLinkedin, FaTwitter } from "react-icons/fa";
+import {AiOutlineMail} from "react-icons/ai"
 import logo from "../assets/logo-og.svg";
 import { styles } from "./styles";
 import { socialMedias } from "../constant/constant";
@@ -72,8 +73,8 @@ const Icon = ({ iconName }) => {
   switch (iconName) {
     case 'github':
       return <FaGithub className={`${styles.socialMedia} `} />;
-    case 'instagram':
-      return <FaInstagram className={`${styles.socialMedia} `}   />;
+    case 'e-mail':
+      return <AiOutlineMail className={`${styles.socialMedia} `}   />;
     case 'twitter':
       return <FaTwitter className={`${styles.socialMedia} `}  />;
     case 'linkedin':

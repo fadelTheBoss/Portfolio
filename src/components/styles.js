@@ -9,6 +9,6 @@ export const styles={
 
     btn: "px-4 py-2 border border-primary text-primary rounded hover:bg-primary hover:text-white transition-all duration-300",
 
-    socialMedia: "cursor-pointer hover:-translate-y-3 duration-300 text-xl hover:text-primary"
+    socialMedia: "cursor-pointer hover:-translate-y-3 duration-300 text-xl md:text-2xl  hover:text-primary"
 
 }
