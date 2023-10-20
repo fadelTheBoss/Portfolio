@@ -57,7 +57,7 @@ const Contact = () => {
       />
       <div className="text-headingColor text-center mb-20">
         <p className="text-xl font-semibold mb-5">Get in touch </p>
-        <h2 className="text-4xl md:text-5xl font-bold">Contact me</h2>
+        <h2 className="text-3xl md:text-4xl font-bold">Contact me</h2>
         <p className="mt-5">
           N &apos; hésitez pas à me contacter pour toute question, proposition de
           projet ou simple discussion.
