@@ -39,7 +39,7 @@ const Navbar = () => {
               className="h-16 w-16 border-2 cursor-pointer hover:scale-90 border-l-primary border-b-primary border-t-primary p-1 rounded-full "
             />
             <h1 className="text-xl text-primary font-bold cursor-pointer  hover:text-gray-400 hover:scale-90 ">
-              SénéGeek
+              Fallou 
             </h1>
           </div>
 
